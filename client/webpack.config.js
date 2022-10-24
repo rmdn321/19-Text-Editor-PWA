@@ -31,7 +31,6 @@ module.exports = () => {
         swDest: "src-sw.js",
       }),     
 
-      new GenerateSW(),
       new WebpackPwaManifest({
         name: 'JATE',
         short_name: 'Text Editor',
