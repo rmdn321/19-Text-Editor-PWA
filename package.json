@@ -5,11 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "",
-    "start": "",
-    "server": "",
-    "build": "",
-    "install": "",
-    "client": ""
+    "start": "npm run build && cd server && npm run server",
+    "server": "cd server node server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install --dev",
+    "client": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
